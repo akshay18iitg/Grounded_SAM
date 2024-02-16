@@ -306,10 +306,9 @@ if __name__ == "__main__":
     # while ". " is a little worse in some case
     text_prompt = res[0].replace(' |', ',')
     caption = res[2]
-
+    text_prompt= 'chair'
     print(f"Caption: {caption}")
     print(f"Tags: {text_prompt}")
-    text_prompt+=(',chair')
 
     # run grounding dino model
     boxes_filt, scores, pred_phrases = get_grounding_output(
