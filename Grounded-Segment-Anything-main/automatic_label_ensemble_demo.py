@@ -311,7 +311,7 @@ if __name__ == "__main__":
     image_to_text = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large")
     caption1 = image_to_text(image_path)
 
-    text_prompt1 = generate_tags(caption1)
+    text_prompt1 = generate_tags(caption1[0]['generated_text'])
     text_prompt += "," + text_prompt1
     print(f"Caption: {caption}")
     print(f"Tags: {text_prompt}")
