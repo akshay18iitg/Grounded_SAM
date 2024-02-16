@@ -309,7 +309,7 @@ if __name__ == "__main__":
 
     print(f"Caption: {caption}")
     print(f"Tags: {text_prompt}")
-    text_prompt+(',chair')
+    text_prompt+=(',chair')
 
     # run grounding dino model
     boxes_filt, scores, pred_phrases = get_grounding_output(
