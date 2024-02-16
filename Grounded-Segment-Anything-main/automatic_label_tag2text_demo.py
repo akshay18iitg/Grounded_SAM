@@ -308,7 +308,7 @@ if __name__ == "__main__":
     caption = res[2]
 
     print(f"Caption: {caption}")
-    print(f"Tags: {text_prompt}")
+    print(f"Tags: {text_prompt} Created by Akshay Shah")
 
     # run grounding dino model
     boxes_filt, scores, pred_phrases = get_grounding_output(
