@@ -320,7 +320,7 @@ if __name__ == "__main__":
     text_prompt1 = generate_tags(caption1[0]['generated_text'])
     text_prompt2 = generate_tags(caption2[0]['generated_text'])
     text_prompt3 = generate_tags(caption3[0]['generated_text'])
-    text_prompt += "," + text_prompt1 + "," + text_prompt2 "," + text_prompt3
+    text_prompt += "," + text_prompt1 + "," + text_prompt2 + "," + text_prompt3
     print(f"Caption: {caption}")
     print(f"Tags: {text_prompt}")
 
