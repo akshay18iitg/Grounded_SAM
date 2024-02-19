@@ -320,8 +320,7 @@ if __name__ == "__main__":
     text_prompt1 = generate_tags(caption1[0]['generated_text'])
     text_prompt2 = generate_tags(caption2[0]['generated_text'])
     text_prompt3 = generate_tags(caption3[0]['generated_text'])
-    lst1 = ['equipment', 'forklift', 'wheeled vehicle', 'vehicle', 'industry', 'central processing unit', 'device', 'industrial', 'technology', 'machine', 'server', 'power', 'steel', 'shopping cart', 'modern', 'interior', 'building', 'factory', 'digital', 'business', 'transportation', 'engineering', 'indoors', 'conveyance', 'inside', 'work', 'cable', 'science', 'computer', 'metal', 'container', 'energy', 'tube', 'transport', 'pump', 'station', 'fuel', 'electronic equipment', 'handcart', 'rack', 'electrical system', 'chemical', 'emergency', 'gas', 'architecture', 'system', 'network', 'valve', 'working', 'medical', 'truck', 'infrastructure', 'petrol', '3d', 'engine', 'hardware', 'automobile', 'auto', 'house', 'row', 'service', 'man', 'window', 'data', 'room', 'danger', 'fitness', 'pipe', 'information', 'structure']
-    text_prompt += "," + text_prompt1 + "," + text_prompt2 + "," + text_prompt3 + "," + ",".join(lst1)
+    text_prompt += "," + text_prompt1 + "," + text_prompt2 + "," + text_prompt3
     print(f"Caption: {caption}")
     print(f"Tags: {text_prompt}")
 
